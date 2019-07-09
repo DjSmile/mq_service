@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ru.pgu.mq_service.dao.RequestDao">
+    <!--    result mybatis.maps     -->
+    <resultMap id="requestMap" type="RequestMQ">
+        <id column="id" property="id"  jdbcType="INTEGER"/>
+        <result column="order_id" property="order_id"/>
+        <result column="cancel_allowed" property="cancel_allowed" jdbcType="BOOLEAN"/>
+        <result column="send_message_allowed" property="send_message_allowed" jdbcType="BOOLEAN"/>
+        <result column="comment" property="comment"/>
+        <result column="author" property="author"/>
+        <result column="org_code" property="org_code"/>
+        <result column="tech_code" property="tech_code"/>
+        <result column="registered_on" property="registered_on"/>
+        <result column="uid" property="uid"/>
+    </resultMap>
+
+    <select id="getById" resultMap="requestMap" parameterType="Integer">
+        SELECT * from mq_service.request WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="RequestMQ" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO mq_service.request
+        (order_id, cancel_allowed, send_message_allowed, comment, author, org_code, tech_code, registered_on, uid)
+        VALUES
+        (#{order_id},#{cancel_allowed},#{send_message_allowed},#{comment},#{author},#{org_code},#{tech_code},#{registered_on}, #{uid})
+    </insert>
+    
+     <select id="getByOrderId" resultMap="requestMap" resultType="RequestMQ" parameterType="Long">
+        SELECT * from mq_service.request WHERE order_id = #{order_id}
+    </select>
+    <select id="getByUId" resultMap="requestMap" resultType="RequestMQ">
+        SELECT * from mq_service.request WHERE uid LIKE '%'||#{uuid}||'%'
+    </select>
+
+</mapper>

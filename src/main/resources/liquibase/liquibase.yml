@@ -1,0 +1,8 @@
+driver: org.postgresql.Driver
+url: jdbc:postgresql://10.0.10.22:5432/mq_service
+username: login
+password: passw
+verbose: true
+dropFirst: false
+changeLogFile: src/main/resources/liquibase/changelog-master.xml
+defaultSchemaName: mq_service

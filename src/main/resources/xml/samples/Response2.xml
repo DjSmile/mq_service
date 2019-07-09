@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:eventServiceResponse xmlns:ns="http://epgu.gosuslugi.ru/lk/order/event/SCVDEV/3.1.0">
+	<ns:code>0</ns:code>
+	<ns:message>operation completed</ns:message>
+</ns:eventServiceResponse>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:eventServiceRequest xmlns:ns="http://epgu.gosuslugi.ru/lk/order/event/SCVDEV/3.1.0">
+    <ns:orderId>64900171</ns:orderId>
+    <ns:eventDate>2015-09-02T05:49:45</ns:eventDate>
+    <ns:eventComment>тест</ns:eventComment>
+    <!--Optional:-->
+    <ns:eventAuthor>Тестовый Т.Т.</ns:eventAuthor>
+    <ns:event>
+        <ns:infoEvent>
+            <ns:code>Тестовое сообщение</ns:code>
+        </ns:infoEvent>
+    </ns:event>
+</ns:eventServiceRequest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!--<Resource name="jdbc/hotels" auth="Container" type="javax.sql.DataSource"-->
+              <!--username="postgres" password="12345678"-->
+              <!--url="jdbc:postgresql://17.17.0.2:5432/postgres"-->
+              <!--driverClassName="org.postgresql.Driver"-->
+              <!--initialSize="5" maxWaitMillis="5000"-->
+              <!--maxTotal="120" maxIdle="5"-->
+              <!--validationQuery="select 1"-->
+              <!--poolPreparedStatements="true"/>-->
+    <!--<Resource name="jdbc/licensing" auth="Container" type="javax.sql.DataSource"-->
+              <!--username="licensing" password="12345678"-->
+              <!--url="jdbc:postgresql://17.0.0.1:5432/licensing"-->
+              <!--driverClassName="org.postgresql.Driver"-->
+              <!--initialSize="5" maxWaitMillis="5000"-->
+              <!--maxTotal="120" maxIdle="5"-->
+              <!--validationQuery="select 1"-->
+              <!--poolPreparedStatements="true"/>-->
+</Context>
