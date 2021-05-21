@@ -18,7 +18,7 @@
 		<liquibase.version>3.5.3</liquibase.version>
 		<jackson.version>2.9.9</jackson.version>
 		<junit.version>4.12</junit.version>
-		<camel.version>2.19.3</camel.version>
+		<camel.version>2.25.1</camel.version>
 	</properties>
 
 	<organization>
