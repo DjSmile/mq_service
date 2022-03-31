@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
-		<springframework.version>4.3.3.RELEASE</springframework.version>
+		<springframework.version>5.3.18</springframework.version>
 		<liquibase.version>3.5.3</liquibase.version>
 		<jackson.version>2.9.9</jackson.version>
 		<junit.version>4.12</junit.version>
