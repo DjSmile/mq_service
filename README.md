@@ -4,7 +4,9 @@ General-purpose service for working with order messages getting from different s
 Service can observe the status of orders and maintaining changes in their status.
 Service supporting Rest API и MQ requests.
 
-(https://github.com/DjSmile/mq_service/blob/master/operation_model.png)
+--------------------------
+
+![alt text](https://github.com/DjSmile/mq_service/blob/master/operation_model.png)
  
 ## Use cases
 Service can execute orders getting from REST and from AMQP using JSON oriented protocol (unique ordrerId in JSON message). 
